@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MyBlog | Stories & Ideas</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">MyBlog<span>.</span></a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#blogs">Explore</a>
+        <a href="#write">Write</a>
+        <a href="#about">About</a>
+      </div>
+
+      <button id="themeBtn" class="theme-btn">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <span class="eyebrow">A LITTLE SPACE FOR BIG IDEAS</span>
+
+      <h1>Words that inspire.<br>
+        <span>Stories that stay.</span>
+      </h1>
+
+      <p>
+        Discover fresh perspectives, thoughtful stories,
+        and ideas worth sharing.
+      </p>
+
+      <a href="#blogs" class="main-btn">Explore stories ↗</a>
+    </div>
+
+    <div class="hero-decoration">✳</div>
+  </section>
+
+  <!-- Blog Section -->
+  <main>
+    <section class="blog-section" id="blogs">
+
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">THE JOURNAL</span>
+          <h2>Latest stories<span>.</span></h2>
+          <p class="muted">A collection of thoughts, lessons and ideas.</p>
+        </div>
+
+        <input
+          type="search"
+          id="searchInput"
+          placeholder="Search stories..."
+          aria-label="Search stories"
+        >
+      </div>
+
+      <div class="filters" id="filters"></div>
+
+      <div class="blog-grid" id="blogContainer"></div>
+
+      <p id="noResults" hidden>No stories found. Try another search.</p>
+
+    </section>
+
+    <!-- Write a Blog -->
+    <section class="write-section" id="write">
+
+      <div class="write-info">
+        <span class="eyebrow">YOUR TURN TO WRITE</span>
+        <h2>Every great idea<br>starts somewhere.</h2>
+        <p class="muted">
+          Have something on your mind? Turn your thoughts
+          into a story and share them here.
+        </p>
+      </div>
+
+      <form id="blogForm" class="blog-form">
+
+        <label for="blogTitle">Story title</label>
+        <input
+          type="text"
+          id="blogTitle"
+          placeholder="Give your story a title..."
+          maxlength="100"
+          required
+        >
+
+        <label for="blogCategory">Category</label>
+        <select id="blogCategory" required>
+          <option value="Technology">Technology</option>
+          <option value="Lifestyle">Lifestyle</option>
+          <option value="Education">Education</option>
+          <option value="Creativity">Creativity</option>
+          <option value="Personal">Personal</option>
+        </select>
+
+        <label for="blogContent">Your story</label>
+        <textarea
+          id="blogContent"
+          rows="6"
+          maxlength="3000"
+          placeholder="Start writing your thoughts..."
+          required
+        ></textarea>
+
+        <button type="submit" class="main-btn">
+          Publish story ↗
+        </button>
+
+        <small class="muted">
+          Posts are saved in this browser.
+        </small>
+
+      </form>
+    </section>
+
+    <!-- About -->
+    <section class="about-section" id="about">
+      <div class="about-icon">M<span>.</span></div>
+
+      <div>
+        <span class="eyebrow">A NOTE ABOUT US</span>
+        <h2>Curiosity looks good on you.</h2>
+        <p class="muted">
+          MyBlog is a cozy corner of the internet for curious
+          minds. Read something new, share what you know,
+          and never stop exploring.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <a href="#home" class="logo">MyBlog<span>.</span></a>
+    <p>Made with ♡ and a little creativity.</p>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
